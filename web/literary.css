@@ -1,0 +1,257 @@
+*{
+	padding: 0;
+	margin:0;
+}
+.menu{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fefcea+2,f1da36+81 */
+background: rgb(254,252,234); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(254,252,234,1) 2%, rgba(241,218,54,1) 81%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(254,252,234,1) 2%,rgba(241,218,54,1) 81%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(254,252,234,1) 2%,rgba(241,218,54,1) 81%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+
+	width: 100%;
+	background-color: yellow;
+	height: 60px;
+}
+.menu > ul{
+	margin:0;
+	padding: 0;
+	float: left;
+	list-style-type: none;
+}
+.menu > ul > li{
+	float: left;
+}
+.menu_item{
+	display: inline-block;
+	padding: 15px 20px;
+	height: 30px;
+	line-height: 30px;
+	color: green;
+	text-decoration: none;
+}
+.menu_item:hover {
+	background-color: rgb(255,164,72);
+}
+
+
+.sub_content{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fefcea+2,f1da36+99 */
+background: rgb(254,252,234); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(254,252,234,1) 2%, rgba(241,218,54,1) 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(254,252,234,1) 2%,rgba(241,218,54,1) 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(254,252,234,1) 2%,rgba(241,218,54,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 ); /* IE6-9 */
+
+	position: absolute;
+	top:60px;
+	overflow: hidden;
+background-color: yellow;
+max-height: 0px;
+}
+.sub_content a{
+	color: green;
+	text-decoration: none;
+}
+.sub_drop{
+	padding: 0px;
+}
+.sub_drop ul {
+	width: 100%;
+	padding:0px;
+	margin:0px;
+	list-style-type: none;
+}
+.sub_drop ul li a{
+	display: inline-block;
+	padding: 10px 20px;
+}
+.sub_drop ul li:hover {
+	background-color: rgb(255,164,72);
+}
+.menu_item:focus{
+	background-color: rgb(255,164,72);
+}
+.menu ul li:hover .sub_content{
+	max-height: 600px;
+	transition: max-height 0.5s ease-in;
+	-webkit-transition: max-height 0.5s ease-in;
+	-moz-transition: max-height 0.5s ease-in;
+}
+/*------------image main------------*/
+#back1{
+	background-image: url("b1.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	
+}
+/*------------image comparison------------*/
+#check:checked ~ #success{
+	margin-left:250px;
+}
+
+/*------------image ministry------------*/
+#im{
+	
+	margin-left: 1200px;
+
+}
+.success{
+	background-image: url("students.JPG");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	overflow-y: hidden;
+	overflow-x: hidden;}
+.h{
+	text-align: center;
+	color: #8e44ad;
+	background-color: rgb(230,200,250); 
+	font-weight: bold;
+	font-size: 30px;
+}
+
+/*------------number student------------*/
+
+.students{
+	font-size: 20px;
+	font-weight: bold;
+	color: #ecf0f1;
+	margin-left: 20px;
+}
+
+/*------------show in line number student------------*/
+
+.lab{
+	display: inline;
+}
+
+#btnshow{
+	margin-top: 15px;
+	height: 30px;
+	width: 50px;
+}
+
+button a{
+	text-decoration: none;
+}
+/*------------table------------*/
+table,th,td{
+	padding: 10px;
+	margin-left: 255px;
+	margin-top: 10px;
+	margin-right: 100px;
+	border: 2px solid black;
+	font-weight: bold;
+	background-color: #bdc3c7;
+	text-align: center;
+	user-select: none;
+	width: 600px;
+	
+   
+	
+}
+/*------------sidebar------------*/
+.sidebar{
+	margin:0;
+	left:-250px;
+	position: absolute;
+	width:250px;
+	height: 28%;
+	background:#042231;
+	transition: all .5s ease;
+	
+}
+.sidebar header{
+	font-size: 22px;
+	color: white;
+	text-align: center;
+	line-height: 70px;
+	background-color: #063146;
+	user-select: none;
+}
+.sidebar ul a{
+	display: block;
+	width:100%;
+	line-height: 50px;
+	font-size: 20px;
+	color: white;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255,255,255,.1);	
+	border-bottom: 1px solid black;
+	transition: .4s;
+
+}
+ul li:hover a{
+	padding-left: 40px;
+}
+#check{
+	display: none;
+}
+label #btn,label #cancel{
+	position: absolute;
+	cursor: pointer;
+	background-color: #042331;
+	border-radius: 3px;
+}
+label #btn{
+	left: 40px;
+	top: 380px;
+	font-size: 35px;
+	background-color: #bdc3c7;
+	color: white;
+	
+	padding: 11px 12px;
+	transition: all .5s;
+	display: inline;
+}
+
+label #cancel{
+	z-index: 1111;
+	left:-205px;
+	top:340px;
+	font-size: 30px;
+	color: #0a5275;
+	padding: 4px 9px;
+	transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+	left:4px;
+}
+#check:checked ~ label #btn{
+	left:250px;
+	opacity: 0;
+	pointer-events: none;
+}
+#check:checked ~ label #cancel{
+	left:205px;
+}
+
+#t1{
+	float: left;
+	display: inline;
+	
+}
+
+#file{
+	font-size: 20px;
+	margin-left: 15px;
+	margin-top: 50px;
+}
+
+.file{
+	font-size: 20px;
+	margin-left: 15px;
+	margin-top: 50px;
+}
+/*------------foter------------*/
+.fot{
+	background-color: #042231;
+	height: 100px;
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	padding-top: 50px;
+}

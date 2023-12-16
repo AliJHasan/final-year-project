@@ -1,0 +1,94 @@
+<style type="text/css">
+	#menu{
+	font-size: 25px;
+	background-color: blue;
+	border: 3px ;
+border-color: #8e44ad;
+border-style: dotted;
+}
+
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>marks of literary</title>
+	<link rel="stylesheet" type="text/css" href="marksOfLiterary.css">
+	<script src = "marksOfLiterary.js"></script>
+
+</head>
+<body>
+
+	<nav class="menu">
+		<ul>
+			<li><a class="menu_item" href=""> Students </a>
+				<div class="sub_content">
+					<div class="sub_drop">
+						<ul >
+							<li><a href="studentScientific.html">students scientific</a></li>
+							<li><a href="studentLiterary.html" >students literary</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+			<li><a class="menu_item" href=" ">marks</a>
+				<div class="sub_content">
+					<div class="sub_drop">
+					   <ul >
+						  <li><a href="marksOfScientific.html ">marks of scientific</a></li>
+						  <li><a href="marksOfLiterary.html ">marks of literary</a></li>
+					   </ul>
+				   </div>
+				</div>
+			</li>
+			<li><a class="menu_item" href="">Comparison</a>
+				<div class="sub_content">
+					<div class="sub_drop">
+						<ul >
+						   <li><a href="scientific.html" >comparisonScientific </a></li>
+						   <li><a href="literary.html ">comparisonLiterary</a></li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+			
+	</nav>
+	
+<section class="backm-o-l">
+<img src="b2.jpg" id="im">
+
+
+
+	<header>
+	<h1 class="h">Marks of Literary</h1>
+	<br><br>
+	</header>
+<!-- 
+	<div class="Students">
+<label ><em>Ratio of success :</em></label>
+
+
+</div> -->
+<br><br><br>
+<div>
+	
+<table  border="1" width= "50%" id="t1">
+		<tr><th>الاسم الكامل </th>
+		<th>رقم الاكتتاب</th>
+		<th>العلامة</th>
+
+</table>
+<form action="http://127.0.0.1:8000/api/resultsL" method="post">
+	<input type="file" id="file" required/>
+	<input type="submit" value = "send" id="file"/>
+</form>
+
+</div>
+<br><br><br><br><br><br>
+</section>
+
+<footer class="fot"> 
+	<p>جميع الحقوق محفوظة لصالح وزارة التعليم العالي الجمهورية العربية السورية</p>
+</footer>
+</body>
+</html>
